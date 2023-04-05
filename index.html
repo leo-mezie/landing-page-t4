@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+   
+
+    <!-- Favicons -->
+   
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="assets/icons/fav.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+     
+      href="assets/icons/fav.jpg"
+    />
+
+    <title>Car Dealership Landing Page</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo">
+        <h1>
+          <span class="jab">Car</span><span class="tv">Deal</span>
+          <span class="fist">🚗</span>
+        </h1>
+      </a>
+
+      <!-- Dark/light theme switcher -->
+      <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <div class="switcher"></div>
+        </label>
+      </div>
+
+      <ul>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" id="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" id="nav-link">Contact</a>
+        </li>
+       
+        <li class="nav-item">
+          <a href="#stakeholders" class="nav-link" id="nav-link"
+            >our cars</a>
+        </li>
+        <li class="nav-item">
+          <a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
+        </li>
+      </ul>
+
+      <!-- Bars -->
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+
+
+  
+
+
+    <section class="hero">
+      <div class="intro-text">
+        <h1>
+          <span class="hear"> WE OFFER THE BEST CAR </span> <br />
+          <span class="connecting"> DEAL</span>
+        </h1>
+        <p>
+         we are online for car advertising <br />
+          We focus on special designs of cars,
+          which mostly are electric cars
+        </p>
+        <a class="btn red" href="#stakeholders">Explore More</a>
+        <a class="btn blue" href="#sub">Subscribe</a>
+      </div>
+      <!-- <div class="i-frame"> -->
+        <img
+          width="560"
+          height="315"
+          src="assets/images/model-s.jpg" />
+        
+      <!-- </div> -->
+    </section>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    <!-- About section -->
+    <section class="about" id="My Projects">
+      <div class="content">
+          <div class="title">
+              <span>Welcome</span>
+          </div>
+          <div class="boxes">
+              <div class="box">
+                  <div class="topic">
+                      <a href="" target="_blank">
+                          About us
+                      </a>
+                  </div>
+                  <p>
+                     we are the best car dealers, subscribe to our 
+                     news letter so u can be notified of new arrivals
+                  </p>
+              </div>
+              <div class="box">
+
+                  <div class="topic">
+                      <a href="" target="_blank">
+                         Our Vision
+                      </a>
+                  </div>
+                  <p>
+                      To offer our customers the best products and
+                       to be rated number one among other companies. 
+                  </p>
+              </div>
+
+              <div class="box">
+                  <div class="topic">
+                      <a href="" target="_blank">
+                         Services
+                      </a>
+                  </div>
+                  <p>
+                      Our Services include the sells of electric and non electric cars
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+  
+
+    <!-- our cars -->
+    <section class="allcars" id="stakeholders">
+      <div class="stakeholders">
+        <div class="cars">
+          <div class="person-1">
+            <img src="assets/images/model-s.jpg" alt="model s" />
+            <p class="name">Tesla</p>
+            <p class="role"><strong>model s</strong></p>
+          </div>
+          <div class="person-2">
+            <img src="assets/images/model-x.jpg" alt="model x" />
+            <p class="name">Tesla</p>
+            <p class="role"><strong>model x</strong></p>
+          </div>
+          <div class="person-3">
+            <img src="assets/images/model-y.jpg" alt="model-y" />
+            <p class="name">Tesla</p>
+            <p class="role"><strong>model y</strong></p>
+          </div>
+
+          <div class="person-1">
+            <img src="assets/images/aston-martin.jpg" alt="aston" />
+            <p class="name">aston martin</p>
+            <p class="role"><strong>evs-1</strong></p>
+          </div>
+          <div class="person-2">
+            <img src="assets/images/lambo.jpg" alt="lambo" />
+            <p class="name">Lamborgini</p>
+            <p class="role"><strong>evs-2</strong></p>
+          </div>
+          <div class="person-3">
+            <img src="assets/images/model-3.jpg" alt="model 3" />
+            <p class="name">tesla</p>
+            <p class="role"> </strong>model 3</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email subscription -->
+    <section class="sub" id="sub">
+      <h3>Subscribe to our newsletter for updates</h3>
+      <form name ="RegForm" action="#">
+        <input
+        type="text" name="fullname" placeholder="enter name" id="email" class="email-sub"  required/>
+
+        <input type="email" name="Email" id="email-sub" class="email-sub" onblur="emailvalidate()" placeholder="enter email"  required
+        />
+        <input type="submit" value="Subscribe" id="submit-btn" class="submit-btn" onclick="formvalidate()"/>
+      </form>
+    </section>
+
+<p>&nbsp;</p><p>&nbsp;</p>'
+
+    <!-- Social icons -->
+    <section class="social">
+      <h3>Connect with us on Social Media</h3>
+      <div class="socicons">
+        <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+        <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
+        <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+      </div>
+    </section>
+
+    <footer>Developed by Debbie &copy;2023. All Rights Reserverd</footer>
+
+    <!-- Scroll to top button -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.png"
+        class="socicon up-arrow"
+        alt="up-arrow"
+    /></i>
+
+    <!-- Web page script -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+ 
+  </body>
+</html>
